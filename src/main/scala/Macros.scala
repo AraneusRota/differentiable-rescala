@@ -10,6 +10,7 @@ object Macros:
         case '{ ($a: V) * (X^$n) } if n.valueOrError > 1 => e
         case '{ ($a: V) * X } => e
         case '{ X ^ $n } if n.valueOrError > 1 => e
+        case '{ X } => e
         case '{ $a: V } => e
         case _ => '{ error("Not a simple polynomial") }
 

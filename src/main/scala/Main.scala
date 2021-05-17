@@ -15,7 +15,7 @@ enum Poly:
 
 @main def main: Unit =
   checkSimplePolynomial(
-    V(5) + V(1)*X + (X^5) + V(-6.5)*(X^(5)) + (X^2)
+    V(5) + V(1)*X + (X^5) + V(-6.5)*(X^(5)) + (X^2) + X
   )
 
   checkSimplePolynomial(
